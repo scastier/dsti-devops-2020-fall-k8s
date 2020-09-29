@@ -16,7 +16,7 @@ spec:
     spec:
       volumes:
         # TODO is completed
-      - name: test-volume
+      - name: host-path-storage
         hostPath:
           # directory location on host
           path: /mnt/hostPath/
@@ -30,5 +30,5 @@ spec:
             name: "http-server"
         volumeMounts:
           # TODO is completed
-        - mountPath: /mnt/hostPath/
-          name: test-volume
+        - mountPath: "/usr/share/nginx/html"
+          name: host-path-storage

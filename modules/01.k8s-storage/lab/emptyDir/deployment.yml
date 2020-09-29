@@ -26,5 +26,5 @@ spec:
             name: "http-server"
         volumeMounts:
         # TODO is completed
-        - mountPath: /usr/share/nginx/html
+        - mountPath: "/usr/share/nginx/html"
           name: cache-volume
